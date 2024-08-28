@@ -9,6 +9,7 @@ import {
     DropdownMenuItem,
     DropdownMenuSeparator,
 } from "@/Components/ui/dropdown-menu";
+import { Link } from "@inertiajs/react";
 
 const UserMenu = () => {
     return (
@@ -26,10 +27,10 @@ const UserMenu = () => {
             <DropdownMenuContent align="end">
                 <DropdownMenuLabel>My Account</DropdownMenuLabel>
                 <DropdownMenuSeparator />
-                <DropdownMenuItem>Settings</DropdownMenuItem>
-                <DropdownMenuItem>Support</DropdownMenuItem>
                 <DropdownMenuSeparator />
-                <DropdownMenuItem>Logout</DropdownMenuItem>
+                <Link href="/logout" method="post" as="button" type="button">
+                    <DropdownMenuItem>Logout</DropdownMenuItem>
+                </Link>
             </DropdownMenuContent>
         </DropdownMenu>
     );

@@ -13,6 +13,7 @@ import MenuItem from "./MenuItem";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { useSidebar } from "@/Context/SidebarContext";
 import MenuItemClose from "./MenuItemClose";
+import { ScrollArea } from "./ui/scroll-area";
 
 const Sidebar = () => {
     const { url } = usePage();
@@ -55,13 +56,51 @@ const Sidebar = () => {
                                 >
                                     Dashboard
                                 </MenuItem>
-                                <MenuItem
-                                    href="/blank"
-                                    icon={AppWindow}
-                                    activePath={url}
-                                >
-                                    Blank
-                                </MenuItem>
+                                {/* Master */}
+                                <h3 className="my-2 text-base font-bold">
+                                    Master
+                                </h3>
+                                <ScrollArea className="h-36">
+                                    <MenuItem
+                                        href="/blank"
+                                        icon={AppWindow}
+                                        activePath={url}
+                                    >
+                                        Blank
+                                    </MenuItem>
+                                    <MenuItem
+                                        href="/blank"
+                                        icon={AppWindow}
+                                        activePath={url}
+                                    >
+                                        Blank
+                                    </MenuItem>
+                                    <MenuItem
+                                        href="/blank"
+                                        icon={AppWindow}
+                                        activePath={url}
+                                    >
+                                        Blank
+                                    </MenuItem>
+                                    <MenuItem
+                                        href="/blank"
+                                        icon={AppWindow}
+                                        activePath={url}
+                                    >
+                                        Blank
+                                    </MenuItem>
+                                    <MenuItem
+                                        href="/blank"
+                                        icon={AppWindow}
+                                        activePath={url}
+                                    >
+                                        Blank
+                                    </MenuItem>
+                                </ScrollArea>
+                                {/* End Master */}
+                                <h3 className="my-2 text-base font-bold">
+                                    Kunjungan
+                                </h3>
                             </>
                         ) : (
                             <TooltipProvider>
