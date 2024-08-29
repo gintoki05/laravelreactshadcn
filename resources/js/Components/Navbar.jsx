@@ -3,7 +3,7 @@ import { Search } from "lucide-react";
 import { Input } from "@/Components/ui/input";
 import UserMenu from "./UserMenu";
 
-const Navbar = () => {
+const Navbar = ({ user }) => {
     return (
         <header className="flex h-14 items-center gap-4 border-b bg-muted/40 px-4 lg:h-[60px] lg:px-6">
             <div className="w-full flex-1">
@@ -18,7 +18,7 @@ const Navbar = () => {
                     </div>
                 </form> */}
             </div>
-            <h1>helo</h1>
+            <h1>Halo {user.name}</h1>
             <UserMenu />
         </header>
     );

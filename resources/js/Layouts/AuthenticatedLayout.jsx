@@ -1,9 +1,11 @@
 import Navbar from "@/Components/Navbar";
 import Sidebar from "@/Components/Sidebar";
 import { useSidebar } from "@/Context/SidebarContext";
+import { usePage } from "@inertiajs/react";
 
-export default function Authenticated({ user, children }) {
+export default function Authenticated({ children }) {
     const { isOpen } = useSidebar();
+    const { auth } = usePage().props;
 
     return (
         <div
@@ -13,7 +15,7 @@ export default function Authenticated({ user, children }) {
         >
             <Sidebar />
             <div className="flex flex-col">
-                <Navbar />
+                <Navbar user={auth.user} />
                 <main className="flex flex-1 flex-col gap-4 p-4 lg:gap-6 lg:p-6">
                     {children}
                 </main>

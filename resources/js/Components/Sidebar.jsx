@@ -3,6 +3,7 @@ import {
     AlignJustify,
     AppWindow,
     Code2,
+    Globe,
     Home,
     Package2,
     SquareTerminal,
@@ -60,44 +61,30 @@ const Sidebar = () => {
                                 <h3 className="my-2 text-base font-bold">
                                     Master
                                 </h3>
+                                {/* <ScrollArea className="h-36">
+                                    <MenuItem
+                                        href="/provinsi"
+                                        icon={Globe}
+                                        activePath={url}
+                                    >
+                                        Provinsi
+                                    </MenuItem>
+                                </ScrollArea> */}
+                                {/* End Master */}
+                                {/* Referensi */}
+                                <h3 className="my-2 text-base font-bold">
+                                    Referensi
+                                </h3>
                                 <ScrollArea className="h-36">
                                     <MenuItem
-                                        href="/blank"
-                                        icon={AppWindow}
+                                        href="/provinsi"
+                                        icon={Globe}
                                         activePath={url}
                                     >
-                                        Blank
-                                    </MenuItem>
-                                    <MenuItem
-                                        href="/blank"
-                                        icon={AppWindow}
-                                        activePath={url}
-                                    >
-                                        Blank
-                                    </MenuItem>
-                                    <MenuItem
-                                        href="/blank"
-                                        icon={AppWindow}
-                                        activePath={url}
-                                    >
-                                        Blank
-                                    </MenuItem>
-                                    <MenuItem
-                                        href="/blank"
-                                        icon={AppWindow}
-                                        activePath={url}
-                                    >
-                                        Blank
-                                    </MenuItem>
-                                    <MenuItem
-                                        href="/blank"
-                                        icon={AppWindow}
-                                        activePath={url}
-                                    >
-                                        Blank
+                                        Provinsi
                                     </MenuItem>
                                 </ScrollArea>
-                                {/* End Master */}
+                                {/* End Referensi */}
                                 <h3 className="my-2 text-base font-bold">
                                     Kunjungan
                                 </h3>
